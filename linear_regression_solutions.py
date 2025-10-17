@@ -10,7 +10,7 @@
 
 # Set matplotlib backend to make sure it displays from the terminal
 import matplotlib
-matplotlib.use('TkAgg')
+# matplotlib.use('TkAgg')
 
 # Read in necessary packages
 import pandas as pd
