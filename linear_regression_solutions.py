@@ -21,13 +21,13 @@ import matplotlib.pyplot as plt # plotting package
 # Read in car value data from csv file
 df = pd.read_csv("car_value_vs_age.csv")
 
-# Graph scatterplot of data
-sns.set(style="whitegrid")
-plt.figure(figsize=(8,6))
-sns.scatterplot(x='Age_years', y='Value_thousands_USD', data=df, s=100, color='purple', edgecolor='black')
-plt.title('Car Value vs Age')
-plt.xlabel('Age (years)')
-plt.ylabel('Value (thousands USD)')
+# # Graph scatterplot of data
+# sns.set(style="whitegrid")
+# plt.figure(figsize=(8,6))
+# sns.scatterplot(x='Age_years', y='Value_thousands_USD', data=df, s=100, color='purple', edgecolor='black')
+# plt.title('Car Value vs Age')
+# plt.xlabel('Age (years)')
+# plt.ylabel('Value (thousands USD)')
 
 # plt.show() # comment this in ONLY when you want to see the plot of the data, rest of the code won't run while plot is displaying
 
@@ -86,14 +86,14 @@ print("Converged parameters:", params)
 
 
 # Overlay regression line
-x_vals = np.linspace(df['Age_years'].min(), df['Age_years'].max(), 100)  # fine grid for smooth line
-y_vals = params[0] * x_vals + params[1]
-plt.plot(x_vals, y_vals, color='red', linewidth=2, label=f'y = {params[0]:.2f}x + {params[1]:.2f}')
+# x_vals = np.linspace(df['Age_years'].min(), df['Age_years'].max(), 100)  # fine grid for smooth line
+# y_vals = params[0] * x_vals + params[1]
+# plt.plot(x_vals, y_vals, color='red', linewidth=2, label=f'y = {params[0]:.2f}x + {params[1]:.2f}')
 
-# Labels and title
-plt.title('Car Value vs Age with Regression Line')
-plt.xlabel('Age (years)')
-plt.ylabel('Value (thousands USD)')
-plt.legend()
+# # Labels and title
+# plt.title('Car Value vs Age with Regression Line')
+# plt.xlabel('Age (years)')
+# plt.ylabel('Value (thousands USD)')
+# plt.legend()
 # plt.show() COMMENT OUT if running pytest
 
